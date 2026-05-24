@@ -1,11 +1,9 @@
 # Blog Content
 
-所有博客文章的统一存储仓库。推送 `.md` 文件到 `posts/` 目录后，三个博客站点会自动同步更新。
+博客文章的统一存储仓库。推送 `.md` 到 `posts/` 后自动同步到博客站点。
 
-**支持的博客站点：**
-- [VitePress](https://xufanchn.github.io/blog-vitepress/)
-- [Hugo](https://xufanchn.github.io/blog-hugo/)
-- [Hexo](https://xufanchn.github.io/blog-hexo/)
+**同步站点：**
+- [xf / blog](https://xufanchn.github.io/blog/) — 个人博客（Hugo）
 
 ## 使用方法
 
@@ -23,6 +21,10 @@ description: 文章摘要
 正文内容...
 ```
 
-2. 推送后，三个博客站点会在 15 分钟内自动更新
+2. 推送后，博客站点每 5 分钟自动同步更新
 
-3. 也可以手动触发各博客站点的 `Deploy` Action 立即更新
+3. 如需立即更新，手动触发博客的 `Deploy` Action
+
+## 相关项目
+
+- [webterm-docs](https://github.com/xufanchn/webterm-docs) — WebTerm 产品文档（独立维护）
